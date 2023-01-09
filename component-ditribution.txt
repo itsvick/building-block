@@ -1,0 +1,67 @@
+Collection-editor
+  core
+    - Services 
+            - data
+            - framework
+            - config
+            - editor
+            - helper
+            - player
+            - public-data
+            - telemetry
+            - toaster
+            - tree
+            - EditorCursor
+            - DialCode (to avoid circular dependency)
+    - Components
+            - app-loader
+            - assign-page-number
+            - collection-icon
+            - content-player-page
+            - header
+            - manage-collaborator
+            - meta-form
+            - fancy-tree
+            - plain-tree
+            - publish-checklist
+            - relational-metadata
+            - resource-reorder
+            - skeleton-loader
+            - slider
+            - template
+            - term-and-condition
+            - translations
+    - Directives
+            - TelemetryInteract
+    - Pipes
+            - interpolate
+  DialCode - secondary Entry Point
+    - components
+            - dialcode
+  bulk-upload - secondary entry point
+    - components
+            - bulk-upload
+            - csv-upload
+  library - secondary entry point
+    - component
+            - library
+            - library-filter
+            - library-list
+            - library-player
+
+
+QuestionSet-Editor
+  - Services
+            - question
+  - Components
+            - answer
+            - ckeditor-tool
+            - options
+            - quality-params-modal,
+            - question
+            - question-option-sub-menu
+            - quml-player
+            - qumlplayer-page
+
+  - Pipes
+            - sanitizeHtml

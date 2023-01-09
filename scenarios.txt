@@ -1,0 +1,16 @@
+1. check without optional dependency == Gives error while serving for missing import
+2. Create one module with secondary entry point and use lodash es module
+3. Check if all tests are running properly for all the components (including secondary entry points)
+4. Test whether internal use of components between secondary points works properly
+4. Note down the stats for each scenario
+
+Scenarios:
+
+1. Use core library
+2. Use core library with secondary point
+3. Use core library having peer-dependency
+4. Use secondary point with dependency
+5. Use secondary point in lazy loaded route
+
+
+

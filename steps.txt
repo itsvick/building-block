@@ -1,0 +1,72 @@
+#Primary Entry Point
+
+ng new building-block --create-application false
+cd building-block
+
+# Create library
+ng generate library collection-editor  // Created library, add prefix if u want default is lib
+ng generate app showcase  // Created sample application
+
+#Lets create common component in the library eg. Header
+ng g c components/header --project=collection-editor // Created new folder and added new component header in it
+
+#Delete previously generated component -- collection-editor.component and collection-editor.service for sake of simplicity
+#Update collection-editor module-- remove old entries and export header component
+#Update public-api.ts file as well
+
+- Use header component in showcase app
+- Update tsconfig.app.json --> compilerOptions to resolve local dependencies
+```"paths": {
+      "collection-editor/*": [
+        "dist/collection-editor/*"
+      ],
+      "collection-editor": [
+        "dist/collection-editor"
+      ]
+    }```
+
+-- Add scripts to workspace package.json file
+```"lib:build": "ng build collection-editor",
+    "showcase:watch": "ng serve showcase",
+    "showcase:build": "ng build showcase",
+```
+
+
+#Secondary Entry Point
+Now lets create a separate module which can be used by the people who want name it as dialcode
+this is without any dependency
+Create folder inside projects/collection-editor
+- Add module
+- Create sample component
+- Export it from public-api
+- Create ng-package.json
+
+
+Now we can import the package like 
+```import { DialCodeModule } from 'collection-editor/dialcode';```
+
+Lets create one more module with sec entry Point - awesome time
+this will be dependent on moment.js library
+Install moment.js as peerdepency and as optional in main package.json of collection-editor library
+
+Build the library and use component in application 
+check the size
+
+#Lets create a lazy loaded module to test this
+ng g m timer --project=showcase
+ng g c timer/timer --project=showcase --inline-style --inline-template --flat --skip-tests
+import awesome-time module as below
+```import { AwesomeTimeModule } from 'collection-editor/awesome-time';```
+
+Add new route for this component
+
+
+
+
+
+
+
+https://sandroroth.com/blog/angular-library
+https://medium.com/tunaiku-tech/creating-secondary-entry-points-for-your-angular-library-1d5c0e95600a
+https://github.com/ng-packagr/ng-packagr/blob/main/docs/secondary-entrypoints.md
+https://github.com/ng-packagr/ng-packagr/issues/2420
