@@ -28,7 +28,6 @@ Collection-editor
             - resource-reorder
             - skeleton-loader
             - slider
-            - template
             - term-and-condition
             - translations
     - Directives
@@ -57,11 +56,12 @@ QuestionSet-Editor
             - answer
             - ckeditor-tool
             - options
-            - quality-params-modal,
+            - quality-params-modal
             - question
             - question-option-sub-menu
             - quml-player
             - qumlplayer-page
+            - template
 
   - Pipes
             - sanitizeHtml
