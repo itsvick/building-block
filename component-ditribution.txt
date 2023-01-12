@@ -15,22 +15,17 @@ Collection-editor
             - DialCode (to avoid circular dependency)
     - Components
             - app-loader
-            - assign-page-number
             - collection-icon
             - content-player-page
             - header
             - manage-collaborator
             - meta-form
             - fancy-tree
-            - plain-tree
             - publish-checklist
             - relational-metadata
             - resource-reorder
             - skeleton-loader
-            - slider
-            - template
             - term-and-condition
-            - translations
     - Directives
             - TelemetryInteract
     - Pipes
@@ -62,6 +57,11 @@ QuestionSet-Editor
             - question-option-sub-menu
             - quml-player
             - qumlplayer-page
+            - translations
+            - plain-tree
+            - slider
+            - template
+            - assign-page-number
 
   - Pipes
             - sanitizeHtml
