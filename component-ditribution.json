@@ -17,6 +17,7 @@
         ],
         "components": [
           "app-loader",
+          "asset-browser",
           "collection-icon",
           "content-player-page",
           "header",
@@ -25,10 +26,7 @@
           "fancy-tree",
           "publish-checklist",
           "relational-metadata",
-          "resource-reorder",
-          "skeleton-loader",
-          "term-and-condition",
-          "translations"
+          "term-and-condition"
         ],
         "directives": [
           "telemetry-interact"
@@ -53,7 +51,9 @@
           "library",
           "library-filter",
           "library-list",
-          "library-player"
+          "library-player",
+          "resource-reorder",
+          "skeleton-loader"
         ]
       }
     },
@@ -70,10 +70,12 @@
         "question-option-sub-menu",
         "quml-player",
         "qumlplayer-page",
+        "plain-tree",
+        "translations",
         "slider",
         "template",
-        "plain-tree",
-        "assign-page-number"
+        "assign-page-number",
+        "progress-status"
       ],
       "directives": [],
       "pipes": [
