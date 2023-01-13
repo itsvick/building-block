@@ -1,83 +1,86 @@
 {
   "editors": {
-  "collection-editor": {
-    "core": {
-      "services":[
-        "data",
-        "framework",
-        "config",
-        "editor",
-        "helper",
-        "player",
-        "public-data",
-        "telemetry",
-        "toaster",
-        "tree",
-        "editor-cursor"
+    "collection-editor": {
+      "core": {
+        "services": [
+          "data",
+          "framework",
+          "config",
+          "editor",
+          "helper",
+          "player",
+          "public-data",
+          "telemetry",
+          "toaster",
+          "tree",
+          "editor-cursor"
+        ],
+        "components": [
+          "app-loader",
+          "asset-browser",
+          "collection-icon",
+          "content-player-page",
+          "header",
+          "manage-collaborator",
+          "meta-form",
+          "fancy-tree",
+          "publish-checklist",
+          "relational-metadata",
+          "term-and-condition"
+        ],
+        "directives": [
+          "telemetry-interact"
+        ],
+        "pipes": [
+          "interpolate"
+        ]
+      },
+      "dial-code": {
+        "components": [
+          "dial-code"
+        ]
+      },
+      "bulk-upload": {
+        "components": [
+          "bulk-upload",
+          "csv-upload"
+        ]
+      },
+      "library": {
+        "components": [
+          "library",
+          "library-filter",
+          "library-list",
+          "library-player",
+          "resource-reorder",
+          "skeleton-loader"
+        ]
+      }
+    },
+    "question-set-editor": {
+      "services": [
+        "question"
       ],
       "components": [
-        "app-loader",
-        "assign-page-number",
-        "collection-icon",
-        "content-player-page",
-        "header",
-        "manage-collaborator",
-        "meta-form",
-        "fancy-tree",
+        "answer",
+        "ckeditor-tool",
+        "options",
+        "quality-params-modal",
+        "question",
+        "question-option-sub-menu",
+        "quml-player",
+        "qumlplayer-page",
         "plain-tree",
-        "publish-checklist",
-        "relational-metadata",
-        "resource-reorder",
-        "skeleton-loader",
+        "translations",
         "slider",
         "template",
-        "term-and-condition",
-        "translations"
+        "assign-page-number",
+        "progress-status"
       ],
-      "directives": [
-        "telemetry-interact"
-      ],
+      "directives": [],
       "pipes": [
-        "interpolate"
-      ]
-    },
-    "dial-code": {
-      "components": [
-        "dial-code"
-      ]
-    },
-    "bulk-upload": {
-      "components": [
-        "bulk-upload",
-        "csv-upload"
-      ]
-    },
-    "library": {
-      "components": [
-        "library",
-        "library-filter",
-        "library-list",
-        "library-player"
+        "sanitizeHtml"
       ]
     }
-  },
-  "question-set-editor": {
-    "services": [
-      "question"
-    ],
-    "components": [
-      "answer",
-      "ckeditor-tool",
-      "options",
-      "quality-params-modal",
-      "question",
-      "question-option-sub-menu",
-      "quml-player",
-      "qumlplayer-page"
-    ],
-    "directives": [],
-    "pipes": [
-      "sanitizeHtml"
-    ]
   }
-}}
+}
